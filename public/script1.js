@@ -1,24 +1,12 @@
 
- 
    $(document).ready(function(){
 
-    loadData();
+      loadData();
     
-    $("#edit-user").on("click",function(){
+     $("#edit-user").on("click",function(){
       console.log($(this));
-
-
     });
-
-
-
-
    });
-
-
-  
-   
-
 
     function loadData(){
     var data_url = "http://localhost:8080/TestController/getUsers/"
@@ -71,15 +59,13 @@
           $(element).removeClass("border-danger");
 
          }
-      });
+    });
 
-      if(isEnteredEveryField)
-      { 
-        
-         var userData = $('.registor-form').serializeArray() ;
-        $.ajax(
-          {
-            
+    if(isEnteredEveryField)
+    { 
+       var userData = $('.registor-form').serializeArray() ;
+       $.ajax(
+        {
               url : "http://localhost:8080/TestController/addUser" ,
               method: "post" ,
               data : { user : userData} , 
@@ -95,23 +81,15 @@
                   }
 
               },
-
-
-
-
-
           }
         );
-      
-
       }
-
    }
 
 
 
-    function editUser(id)
-    {
+   function editUser(id)
+   {
       var url = "http://localhost:8080/TestController/getUser?id="+id ;
       var fields = ['#fname','#lname','#dept','#username','#password'] ;
 
@@ -141,18 +119,8 @@
 
 
 
-
-
-
-
-
-
-
     function updateUser(userId)
     {
-          
-
-
       var fields = ['#fname','#lname','#dept','#username','#password'] ;
       var isEnteredEveryField = false ;
      
@@ -197,19 +165,9 @@
                   }
 
               },
-
-
-
-
-
           }
         );
-      
-
       }
-
-
-
     }
    //on_click
 
