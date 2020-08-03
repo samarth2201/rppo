@@ -1,0 +1,46 @@
+body{
+	background: red;
+}
+*{
+	margin:0px;
+	padding:0px;
+	font-family:Times New Roman;
+   }
+   .navigation-bar{
+	   
+	   height:auto;
+	   padding:5px;
+	   background:#1034A6;
+
+   } 
+   .navigation-bar a
+   {
+
+	   font-size:20px;
+	   list-style-type:none;
+	   display:inline-block;
+	   margin:5px;
+	   color:white;
+	   font-family:Times New Roman;
+   }
+   
+   
+   .register-wrapper{
+
+   margin-top:5px;
+   padding:10px;
+   border: 1px solid black;
+
+   }
+   .registor-form
+   {	
+	   position:absolute;
+	   top:60px;
+	   left:auto;
+	   padding:10px;
+	   border:1px solid black ;
+	   width:100%;
+	   margin:auto;
+	   display:none;
+	   
+   }
